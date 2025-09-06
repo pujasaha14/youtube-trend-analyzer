@@ -5,4 +5,8 @@ numpy
 matplotlib
 seaborn
 scikit-learn
+<<<<<<< HEAD
 chardet
+=======
+chardet
+>>>>>>> 36a77a5 (saved my local changes)

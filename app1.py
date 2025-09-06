@@ -1,4 +1,3 @@
-
 import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
@@ -92,4 +91,3 @@ if {"views","likes","comments"}.issubset(df.columns):
             st.warning("This video may not perform well")
 else:
     st.warning("Dataset must have columns: views,likes,comment_count,category")
-
