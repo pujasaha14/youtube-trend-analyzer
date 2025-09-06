@@ -946,7 +946,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": none,
+   "execution_count": None,
    "id": "5fea376a",
    "metadata": {},
    "outputs": [],
