@@ -85,7 +85,7 @@ if {"views","likes","comments"}.issubset(df.columns):
     comments_input=st.number_input("Number of comments",min_value=0,value=200)
 
     if st.button("predict"):
-        pred=model.predict([[likes_input,comment_input]])[0]
+        pred=model.predict([[likes_input,comments_input]])[0]
         if pred == 1:
             st.success("This video is likel to be popular!")
         else:
