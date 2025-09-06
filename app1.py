@@ -41,10 +41,10 @@ if "category" in df.columns and "views" in df.columns:
     st.pyplot(fig)
 
 #Likes vs comments scatter
-if "likes" in df.columns and "comment" in df.columns:
+if "likes" in df.columns and "comments" in df.columns:
     st.subheader("engagement: Likes vs Comments")
     fig, ax=plt.subplots(figsize=(7,5))
-    sns.scatterplot(data=df,x="likes", y="comment_count",alpha=0.5)
+    sns.scatterplot(data=df,x="likes", y="comments",alpha=0.5)
     ax.set_title("Likes vs Comments")
     st.pyplot(fig)
 
