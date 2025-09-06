@@ -60,9 +60,9 @@ if "category" in df.columns:
 #Machine Learning part
 st.header("Machine Learning Prediction")
 if {"views","likes","comments"}.issubset(df.columns):
-    df["popular"]=(df["views"]>df["views"].median()).astype(int)
+    df["popular"]=(df["views"]>df["views"].quantile(0.75)).astype(int)
 
-    features=["likes","comments"]
+    features=["likes","comments",]
     X=df[features]
     y=df["popular"]
     X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.2,random_state=42)
